@@ -1,0 +1,241 @@
+
+/* ===== General Styles ===== */
+:root {
+  --primary-color: #e74c3c;
+  --secondary-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --border-radius: 10px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-color);
+  line-height: 1.6;
+  background-color: #fefefe;
+  overflow-x: hidden;
+}
+
+/* ===== Navigation ===== */
+.primary-navbar{
+  padding: 1rem 0;
+  transition: var(--transition);
+  background-color: #ed9085 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-brand img {
+  height: 40px;
+  transition: var(--transition);
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline-secondary {
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+  transition: var(--transition);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--dark-color);
+  color: white;
+}
+/* ===== Hero Section ===== */
+.hero-section {
+  background: linear-gradient(to right, #c5483b, #ed9085);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+/* ===== Property Cards ===== */
+.property-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  height: 100%;
+}
+
+.property-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.property-card .card-body {
+  padding: 15px;
+}
+
+.property-card .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.property-card .card-text {
+  font-size: 14px;
+  color: var(--secondary-color);
+}
+
+.property-card .btn {
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* ===== Testimonials ===== */
+.text-warning {
+  color: #ffc107 !important;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--dark-color);
+  color: #adb5bd;
+  padding: 50px 0 20px;
+}
+
+footer h5 {
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+footer h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #adb5bd;
+  transition: var(--transition);
+}
+
+footer ul li a:hover {
+  color: var(--primary-color);
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: var(--transition);
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .search-bar {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .search-bar .row > div {
+    margin-bottom: 10px;
+  }
+}

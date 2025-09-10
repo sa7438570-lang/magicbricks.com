@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagicBricks | Real Estate Made Easy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light primary-navbar
+bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Magic_Bricks_logo.png" height="50"
+          alt="MagicBricks">
+      </a>
+       <!-- Hamburger Toggle Button -->
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+     Collapsible Navbar Links -->
+    <!-- <div class="collapse navbar-collapse" id="primaryNavbarCollapse">
+      <ul class="navbar-nav me-auto">
+        Add your navbar links here if needed -->
+      <!-- </ul>  -->
+      <div class="d-flex align-items-center">
+        <!-- <a href="../pages/login.html" class="btn btn-outline-secondary me-2"><i class="fas fa-user"></i></a> -->
+        <a href="" class="btn btn-outline-secondary me-2"><i class="fas fa-sign-in-alt"></i></a>
+        <!-- <button class="btn btn-outline-secondary me-2"><i class="fas fa-shopping-cart"></i></button> -->
+        <a href="../pages/login.html" class="btn btn-outline-secondary me-2"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <!-- Secondary Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+    <!-- Hamburger Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Collapsible Dropdown Menus -->
+    <div class="collapse navbar-collapse" id="secondaryNavbarCollapse">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="buyDropdown" role="button" data-bs-toggle="dropdown">Buy</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/owner property.html">Owner Properties</a></li>
+            <li><a class="dropdown-item" href="#">Ready to Move</a></li>
+            <li><a class="dropdown-item" href="#">Budget Homes</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="sellDropdown" role="button" data-bs-toggle="dropdown">Sell</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/house.html">House for Sale</a></li>
+            <li><a class="dropdown-item" href="#">Flats in Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Villa in Mumbai</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="rentDropdown" role="button" data-bs-toggle="dropdown">Rent</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Premium Homes</a></li>
+            <li><a class="dropdown-item" href="#">Plot in Mumbai</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="">Advice-tools-section</a></li>
+            <li><a class="dropdown-item" href="">Blog-section</a></li>
+            <li><a class="dropdown-item" href="#">Under ₹50 Lac</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="./pages/blog.html"  role="button">Blog</a>
+        
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-4">Find Your Dream Home</h1>
+      <p class="lead mb-5">Explore 150,000+ properties across India with MagicBricks.</p>
+      <div class="search-bar shadow-sm p-3 bg-white rounded">
+        <div class="row g-2">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="City or Location">
+          </div>
+          <div class="col-md-3">
+            <select class="form-select">
+              <option>Flat</option>
+              <option>Plot</option>
+              <option>Commercial</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select">
+              <option>Budget</option>
+              <option>0 - 50 Lakhs</option>
+              <option>50 Lakhs - 1 Cr</option>
+              <option>1 Cr+</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <a href="./pages/Hyderabad.html" class="btn btn-danger w-100">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Localities -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Top Cities</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card locality-card shadow-sm">
+            <img src="https://mediacdn.99acres.com/media1/16807/3/336143474D-1640587363487.jpg" class="card-img-top"
+              alt="Pune">
+            <div class="card-body">
+              <h5 class="card-title">Pune</h5>
+              <p class="card-text">15,000+ Properties</p>
+              <a href="../pages/pune.html" class="btn btn-sm btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card locality-card shadow-sm">
+            <img src="https://mediacdn.99acres.com/media1/11848/1/236961707D-1594715125517.jpg" class="card-img-top"
+              alt="Gurgaon">
+            <div class="card-body">
+              <h5 class="card-title">Delhi</h5>
+              <p class="card-text">20,000+ Properties</p>
+              <a href="#" class="btn btn-sm btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card locality-card shadow-sm">
+            <img src="https://mediacdn.99acres.com/media1/11846/12/236932009D-1594709336922.jpg" class="card-img-top"
+              alt="Bangalore">
+            <div class="card-body">
+              <h5 class="card-title">Bangalore</h5>
+              <p class="card-text">30,000+ Properties</p>
+              <a href="#" class="btn btn-sm btn-outline-danger">Explore</a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- About Us Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- About Us Content -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title mb-4">About MagicBricks</h2>
+          <p class="lead mb-3">
+            MagicBricks is India’s leading real estate platform, trusted by over 1 million happy customers. Since 2006,
+            we’ve been helping people buy, sell, and rent properties with ease.
+          </p>
+          <p class="mb-4">
+            Our mission is to make real estate transactions transparent, efficient, and stress-free. With 150,000+
+            verified listings across 50+ cities, we connect buyers, sellers, and renters with their dream properties.
+          </p>
+          <div class="row">
+            <!-- Stats -->
+            <div class="col-md-4 mb-3">
+              <h3 class="text-danger fw-bold">1M+</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h3 class="text-danger fw-bold">150K+</h3>
+              <p>Verified Listings</p>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h3 class="text-danger fw-bold">50+</h3>
+              <p>Cities Covered</p>
+            </div>
+          </div>
+          <a href="./pages/about-us.html" class="btn btn-danger mt-3">Learn More</a>
+        </div>
+        <!-- About Us Image -->
+        <div class="col-lg-6">
+          <div class="position-relative">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80"
+              class="img-fluid rounded shadow-sm" alt="MagicBricks Team">
+            <div class="play-button">
+              <i class="fas fa-play-circle text-danger" style="font-size: 50px;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Why Choose MagicBricks?</h2>
+        <p class="lead mb-0">
+          Discover the advantages of using India’s #1 real estate platform.
+        </p>
+      </div>
+      <div class="row g-4">
+        <!-- Feature 1: Verified Listings -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-check-circle text-danger"></i>
+            </div>
+            <h3 class="feature-title">Verified Listings</h3>
+            <p class="feature-text">
+              Every property is verified for authenticity, so you can buy or rent with confidence.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 2: Expert Agents -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-user-tie text-danger"></i>
+            </div>
+            <h3 class="feature-title">Expert Agents</h3>
+            <p class="feature-text">
+              Our team of 500+ certified agents provides personalized guidance at every step.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 3: Transparent Deals -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-file-alt text-danger"></i>
+            </div>
+            <h3 class="feature-title">Transparent Deals</h3>
+            <p class="feature-text">
+              No hidden charges. Get fair prices and clear documentation for all transactions.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 4: Wide Range of Properties -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-home text-danger"></i>
+            </div>
+            <h3 class="feature-title">Wide Range of Properties</h3>
+            <p class="feature-text">
+              From budget homes to luxury villas, find properties that match your needs in 50+ cities.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 5: Easy Financing -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-credit-card text-danger"></i>
+            </div>
+            <h3 class="feature-title">Easy Financing</h3>
+            <p class="feature-text">
+              Get pre-approved home loans with our partner banks at competitive rates.
+            </p>
+          </div>
+        </div>
+        <!-- Feature 6: 24/7 Support -->
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon mb-4">
+              <i class="fas fa-headset text-danger"></i>
+            </div>
+            <h3 class="feature-title">24/7 Support</h3>
+            <p class="feature-text">
+              Our customer support team is available round the clock to assist you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="./pages/contact.html" class="btn btn-danger btn-lg px-4">Get Started Today</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Property Guides & Tips -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Property Guides & Tips</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card guide-card shadow-sm">
+            <img src="https://img.staticmb.com/mbcontent/images/uploads/2023/7/CSC%20Login%20featured%20image.jpg"
+              class="card-img-top" alt="Buying Guide">
+            <div class="card-body">
+              <h5 class="card-title">Research Guide</h5>
+              <p class="card-text">Step-by-step guide to buying your first home.</p>
+              <a href="../pages/research.html" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card guide-card shadow-sm">
+            <img src="https://img.staticmb.com/mbcontent/images/uploads/2024/1/rent-agreement-online-format.jpg"
+              class="card-img-top" alt="Selling Tips">
+            <div class="card-body">
+              <h5 class="card-title">Selling Tips</h5>
+              <p class="card-text">How to sell your property quickly and profitably.</p>
+              <a href="#" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card guide-card shadow-sm">
+            <img src="https://img.staticmb.com/mbcontent/images/uploads/2023/6/RERA%20Telangana.jpg"
+              class="card-img-top" alt="Legal Advice">
+            <div class="card-body">
+              <h5 class="card-title">Legal Advice</h5>
+              <p class="card-text">Understand the legal aspects of property transactions.</p>
+              <a href="#" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Advice & Tools Section -->
+  <section class="advice-tools-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" data-aos="fade-up">Advice & Tools</h2>
+      <div class="row g-4">
+        <!-- Card 1: EMI Calculator -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">📟</div>
+              <h3 class="card-title">EMI Calculator</h3>
+              <p class="card-text">Know how much you'll have to pay every month on your loan. Plan your budget
+                effectively with our easy-to-use EMI calculator.</p>
+              <a href="../pages/EMI.html" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Rates & Trends -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">📈</div>
+              <h3 class="card-title">Rates & Trends</h3>
+              <p class="card-text">Know all about property rates and trends in your city. Stay updated with the latest
+                market insights and price movements.</p>
+              <a href="#" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Investment Hotspot -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">🤲</div>
+              <h3 class="card-title">Investment Hotspot</h3>
+              <p class="card-text">Discover the top localities in your city for investment. Find high-growth areas with
+                the best returns on investment.</p>
+              <a href="#" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Research Insights -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">📑</div>
+              <h3 class="card-title">Research Insights</h3>
+              <p class="card-text">Get expert insights and research reports on real estate. Access in-depth analysis and
+                forecasts for informed decisions.</p>
+              <a href="#" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Legal Guidance -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">⚖️</div>
+              <h3 class="card-title">Legal Guidance</h3>
+              <p class="card-text">Understand the legal aspects of buying, selling, or renting property. Get guidance on
+                contracts, taxes, and compliance.</p>
+              <a href="#" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Home Loan Guide -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="card h-100 shadow-sm advice-tool-card">
+            <div class="card-body">
+              <div class="icon mb-3">🏦</div>
+              <h3 class="card-title">Home Loan Guide</h3>
+              <p class="card-text">Learn everything about home loans, from eligibility to application. Compare loan
+                options and find the best rates.</p>
+              <a href="#" class="btn btn-link text-primary fw-bold">View now →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Blog Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Latest Blog Posts</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card blog-card shadow-sm">
+            <img
+              src="https://static.99acres.com/universalhp/img/d_hp_availability_2.webp"
+              class="card-img-top" alt="Top 5 Localities in Mumbai">
+            <div class="card-body">
+              <h5 class="card-title">Top 5 Localities in Mumbai</h5>
+              <p class="card-text">Discover the best neighborhoods to live in Mumbai.</p>
+              <a href="../pages/blog.html" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card shadow-sm">
+            <img
+              src="https://newprojects.99acres.com/projects/srias_life_spaces_llp/srias/images/vjhvmog_1694782176_445703642_med.jpg"
+              class="card-img-top" alt="Investing in Commercial Properties">
+            <div class="card-body">
+              <h5 class="card-title">Investing in Commercial Properties</h5>
+              <p class="card-text">Tips for investing in commercial real estate.</p>
+              <a href="./pages/blog.html" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card blog-card shadow-sm">
+            <img
+              src="https://cdn.staticmb.com/magicservicestatic/images/revamp/mbhome-web/property-services/webp/graphic-home-loans.webp"
+              class="card-img-top" alt="Home Loan Guide">
+            <div class="card-body">
+              <h5 class="card-title">Home Loan Guide</h5>
+              <p class="card-text">Everything you need to know about home loans.</p>
+              <a href="./pages/blog.html" class="btn btn-sm btn-outline-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Agents Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Meet Our Agents</h2>
+      <div class="row g-4">
+        <!-- Agent 1 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up">
+          <div class="card h-100 shadow-sm agent-card">
+            <img src="https://img.staticmb.com/mbimages/topagent/Profile-1-3950501_200_200.jpg" class="card-img-top"
+              alt="John Doe" style="height: 160px; object-fit: cover;">
+            <div class="card-body text-center p-3">
+              <h5 class="card-title mb-1">John Doe</h5>
+              <p class="card-text text-muted mb-2">Senior Real Estate Agent</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <p class="card-text mb-2">
+                <i class="fas fa-phone-alt me-2"></i> +91 98765 43210
+              </p>
+              <a href="mailto:john.doe@magicbricks.com" class="btn btn-sm btn-primary py-1 px-3">
+                <i class="fas fa-envelope me-1"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Agent 2 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm agent-card">
+            <img src="https://img.staticmb.com/mbimages/topagent/Profile-1-56883251_200_200.jpg" class="card-img-top"
+              alt="Jane Smith" style="height: 160px; object-fit: cover;">
+            <div class="card-body text-center p-3">
+              <h5 class="card-title mb-1">Jane Smith</h5>
+              <p class="card-text text-muted mb-2">Real Estate Consultant</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <p class="card-text mb-2">
+                <i class="fas fa-phone-alt me-2"></i> +91 98765 12345
+              </p>
+              <a href="mailto:jane.smith@magicbricks.com" class="btn btn-sm btn-primary py-1 px-3">
+                <i class="fas fa-envelope me-1"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Agent 3 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm agent-card">
+            <img src="https://img.staticmb.com/mbimages/topagent/Profile-4-31226625_300_308.jpg" class="card-img-top"
+              alt="Michael Johnson" style="height: 160px; object-fit: cover;">
+            <div class="card-body text-center p-3">
+              <h5 class="card-title mb-1">Michael Johnson</h5>
+              <p class="card-text text-muted mb-2">Property Specialist</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <p class="card-text mb-2">
+                <i class="fas fa-phone-alt me-2"></i> +91 98765 67890
+              </p>
+              <a href="mailto:michael.johnson@magicbricks.com" class="btn btn-sm btn-primary py-1 px-3">
+                <i class="fas fa-envelope me-1"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Agent 4 -->
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 shadow-sm agent-card">
+            <img src="https://img.staticmb.com/mbimages/topagent/Profile-1-41334843_200_200.jpg" class="card-img-top"
+              alt="Emily Davis" style="height: 160px; object-fit: cover;">
+            <div class="card-body text-center p-3">
+              <h5 class="card-title mb-1">Emily Davis</h5>
+              <p class="card-text text-muted mb-2">Luxury Home Advisor</p>
+              <div class="d-flex justify-content-center gap-2 mb-3">
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="btn btn-sm btn-outline-primary rounded-circle p-2">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+              <p class="card-text mb-2">
+                <i class="fas fa-phone-alt me-2"></i> +91 98765 01234
+              </p>
+              <a href="mailto:emily.davis@magicbricks.com" class="btn btn-sm btn-primary py-1 px-3">
+                <i class="fas fa-envelope me-1"></i> Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              How do I buy a property on MagicBricks?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can browse properties, shortlist your favorites, and contact sellers directly through our platform.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What documents are required for property registration?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Typically, you need a sale deed, identity proof, address proof, and property tax receipts.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Explore Properties on Map</h2>
+      <div class="map-container shadow-sm">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.65794937387!2d72.8302149750529!3d18.9987170871269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9d94311c30b%3A0x8344a7adf3fae6f8!2sPhoenix%20Marketcity%20Kurla!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="py-5 bg-danger text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Ready to Find Your Dream Home?</h2>
+      <p class="mb-4">Browse thousands of properties and connect with verified sellers.</p>
+      <a href="./pages/gallery.html" class="btn btn-light btn-lg">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Partner Logos -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="section-title mb-5">Our Trusted Partners</h2>
+      <div class="row g-4 justify-content-center align-items-center">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSquouX3qJzp6uZwleCOtTBppHfDKlN6vDHg&s"
+              class="img-fluid partner-logo" alt="HDFC Bank Logo">
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://i.pinimg.com/736x/ff/d5/31/ffd531a6a78464512a97848e14506738.jpg"
+              class="img-fluid partner-logo" alt="ICICI Bank Logo">
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkaiPz_KIsglyNv0zLMTtQ9oxQ6KmKILwnxw&s"
+              class="img-fluid partner-logo" alt="SBI Logo">
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://download.logo.wine/logo/Axis_Bank/Axis_Bank-Logo.wine.png" class="img-fluid partner-logo"
+              alt="Axis Bank Logo">
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIv2bcBKrbGxkjWvLX08z-80PgmL9v-SRvzA&s"
+              class="img-fluid partner-logo" alt="Union Bank Logo">
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="partner-logo-container">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR52TyiuS381oRF4DApwCajX2uaCuRHd9KdA&s"
+              class="img-fluid partner-logo" alt="Kotak Bank Logo">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 shadow-sm testimonial-card">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://www.99acres.com/load/Company/testimonial_photo_serve/275"
+                  class="rounded-circle me-3 testimonial-img" alt="Pooja Sharma">
+                <div>
+                  <h6 class="mb-0">Pooja Sharma</h6>
+                  <small class="text-muted">Pune</small>
+                </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">Magic Bricks helped me find my dream home in Pune West. The platform is
+                user-friendly, and the agents are very professional.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm testimonial-card">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://www.99acres.com/load/Company/testimonial_photo_serve/206"
+                  class="rounded-circle me-3 testimonial-img" alt="Dhanush Patel">
+                <div>
+                  <h6 class="mb-0">Dhanush Patel</h6>
+                  <small class="text-muted">Mumbai</small>
+                </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p class="card-text">I sold my property through Magic Bricks, and the experience was seamless. Highly
+                recommended!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm testimonial-card">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://www.99acres.com/load/Company/testimonial_photo_serve/273"
+                  class="rounded-circle me-3 testimonial-img" alt="Amit Kumar">
+                <div>
+                  <h6 class="mb-0">Amit Kumar</h6>
+                  <small class="text-muted">Bangalore</small>
+                </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">The team at Magic Bricks is fantastic. They guided me through every step of the
+                buying process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>About MagicBricks</h5>
+          <p>Your trusted partner in finding flats, plots, and commercial properties across India.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Buy</a></li>
+            <li><a href="#" class="text-white">Rent</a></li>
+            <li><a href="#" class="text-white">Sell</a></li>
+            <li><a href="#" class="text-white">Commercial</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+            <li><a href="#" class="text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email: support@magicbricks.com</li>
+            <li>Phone: +91 98765 43210</li>
+            <li>Address: Mumbai, India</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2025 MagicBricks.com | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

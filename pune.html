@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagicBricks | Real Estate Made Easy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/pune.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light primary-navbar
+bg-white sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Magic_Bricks_logo.png" height="50" alt="MagicBricks">
+      </a>
+      <div class="d-flex align-items-center">
+       <!-- <a href="../pages/login.html" class="btn btn-outline-secondary me-2"><i class="fas fa-user"></i></a> -->
+        <a href="" class="btn btn-outline-secondary me-2"><i class="fas fa-sign-in-alt"></i></a>
+        <!-- <button class="btn btn-outline-secondary me-2"><i class="fas fa-shopping-cart"></i></button> -->
+          <a href="../pages/login.html" class="btn btn-outline-secondary me-2"><i class="fas fa-user"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Secondary Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="buyDropdown" role="button" data-bs-toggle="dropdown">Buy</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/owner property.html">Owner Properties</a></li>
+              <li><a class="dropdown-item" href="#">Ready to Move</a></li>
+              <li><a class="dropdown-item" href="#">Budget Homes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="sellDropdown" role="button" data-bs-toggle="dropdown">Sell</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/house.html">House for Sale</a></li>
+              <li><a class="dropdown-item" href="#">Flats in Mumbai</a></li>
+              <li><a class="dropdown-item" href="#">Villa in Mumbai</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="rentDropdown" role="button" data-bs-toggle="dropdown">Rent</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Premium Homes</a></li>
+              <li><a class="dropdown-item" href="#">Plot in Mumbai</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Under ₹50 Lac</a></li>
+              <li><a class="dropdown-item" href="#">₹50 Lac – ₹1 Cr</a></li>
+              <li><a class="dropdown-item" href="#">₹1 Cr – ₹1.5 Cr</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">Discover Your Dream Home in Pune</h1>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">Explore 440+ properties in Pune West</p>
+      <div class="d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
+        <button class="btn btn-light btn-lg px-4">New Launch</button>
+        <button class="btn btn-outline-light btn-lg px-4">Resale</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search and Filter Bar -->
+  <!-- <div class="container my-4">
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Search by locality, project, or landmark...">
+          </div>
+          <div class="col-md-2">
+            <select class="form-select">
+              <option selected>Budget</option>
+              <option>Under ₹50 Lac</option>
+              <option>₹50 Lac – ₹1 Cr</option>
+              <option>₹1 Cr – ₹1.5 Cr</option>
+            </select>
+          </div> -->
+          <!-- <div class="col-md-2">
+            <select class="form-select">
+              <option selected>Property Type</option>
+              <option>Flat</option>
+              <option>Villa</option>
+              <option>Plot</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select class="form-select">
+              <option selected>BHK Type</option>
+              <option>1 BHK</option>
+              <option>2 BHK</option>
+              <option>3 BHK</option>
+            </select>
+          </div> -->
+          <!-- <div class="col-md-3 d-grid">
+            <button class="btn btn-primary">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Featured Projects Carousel -->
+  <div class="container my-4">
+    <h2 class="mb-4" data-aos="fade-up">Featured Projects</h2>
+    <div id="featuredCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://imagecdn.99acres.com/media1/30248/15/604975143M-1755104468582.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">Motideep Apartment</h5>
+                  <p class="card-text mb-2"><small class="text-muted">2 BHK Apartment, 720 Sq.ft., Malvan</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 23.63 Lac</h5>
+                    <a href="../pages/moti apartment.html" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://imagecdn.99acres.com/media1/27859/19/557199409M-1755145051732.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">Bhugaon Villa</h5>
+                  <p class="card-text mb-2"><small class="text-muted">3 BHK Villa, 3000 Sq.ft., Bavdhan</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 1 Cr.</h5>
+                    <a href="#" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://newprojects.99acres.com/projects/shiva_sai_constructions_hyderabad/shiva_lavista/images/plvrvd2_1742642552_579668523_med.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">Siddhivinayak Residency</h5>
+                  <p class="card-text mb-2"><small class="text-muted">2 BHK Apartment, 720 Sq.ft., Malvan</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 23.63 Lac</h5>
+                    <a href="#" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://newprojects.99acres.com/projects/majestique_landmarks/majestique_signature_towers/images/ofph8vn_1706098667_469192472_med.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">4 BHK Independent House</h5>
+                  <p class="card-text mb-2"><small class="text-muted">Munnar, Idukki</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 1 Cr.</h5>
+                    <a href="#" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://newprojects.99acres.com/projects/prdehousing/platinum/images/whboevh_1729248926_525567857_med.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">4 BHK Independent House</h5>
+                  <p class="card-text mb-2"><small class="text-muted">Munnar, Idukki</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 1 Cr.</h5>
+                    <a href="#" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm property-card">
+                <img src="https://imagecdn.99acres.com/media1/30353/18/607078925M-1755057136205.jpg" class="card-img-top" alt="Property Image">
+                <div class="card-body">
+                  <h5 class="card-title">4 BHK Independent House</h5>
+                  <p class="card-text mb-2"><small class="text-muted">Munnar, Idukki</small></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">₹ 1 Cr.</h5>
+                    <a href="#" class="btn btn-sm btn-primary">Brochure</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#featuredCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#featuredCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Interactive Map Section
+  <div class="container my-5">
+    <h2 class="mb-4" data-aos="fade-up">Explore Pune West</h2>
+    <div class="ratio ratio-21x9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4090000000002!2d73.75!3d18.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDMxJzEwLjQiTiA3M8KwNDUnMTIuNiJF!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div> -->
+
+  <!-- Blog/News Section -->
+  <!-- <div class="container my-5">
+    <h2 class="mb-4" data-aos="fade-up">Latest News & Tips</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <h5 class="card-title">Tips for First-Time Home Buyers</h5>
+            <p class="card-text">Learn how to navigate the real estate market and make informed decisions.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <h5 class="card-title">Pune Real Estate Market Update</h5>
+            <p class="card-text">Get the latest trends and insights for Pune's real estate market.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Blog Image">
+          <div class="card-body">
+            <h5 class="card-title">How to Sell Your Property Fast</h5>
+            <p class="card-text">Discover strategies to sell your property quickly and at the best price.</p>
+            <a href="#" class="btn btn-sm btn-outline-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Testimonials Section -->
+  <!-- <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">What Our Clients Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="User Image">
+                <div>
+                  <h6 class="mb-0">Rahul Sharma</h6>
+                  <small class="text-muted">Pune</small>
+                </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">Magic Bricks helped me find my dream home in Pune West. The platform is user-friendly, and the agents are very professional.</p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="User Image">
+                <div>
+                  <h6 class="mb-0">Priya Patel</h6>
+                  <small class="text-muted">Mumbai</small>
+                </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> -->
+              <!-- </div>
+              <p class="card-text">I sold my property through Magic Bricks, and the experience was seamless. Highly recommended!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://via.placeholder.com/100" class="rounded-circle me-3" alt="User Image">
+                <div>
+                  <h6 class="mb-0">Amit Kumar</h6>
+                  <small class="text-muted">Bangalore</small> -->
+                <!-- </div>
+              </div>
+              <div class="text-warning mb-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="card-text">The team at Magic Bricks is fantastic. They guided me through every step of the buying process.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>About MagicBricks</h5>
+          <p>Your trusted partner in finding flats, plots, and commercial properties across India.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Buy</a></li>
+            <li><a href="#" class="text-white">Rent</a></li>
+            <li><a href="#" class="text-white">Sell</a></li>
+            <li><a href="#" class="text-white">Commercial</a></li>
+            <li><a href="#" class="text-white">Blog</a></li>
+            <li><a href="#" class="text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li>Email: support@magicbricks.com</li>
+            <li>Phone: +91 98765 43210</li>
+            <li>Address: Mumbai, India</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>Follow Us</h5>
+          <div class="social-links">
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center mb-0">© 2025 MagicBricks.com | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
